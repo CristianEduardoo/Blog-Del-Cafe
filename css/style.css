@@ -312,6 +312,8 @@ img{
   .campo__field{
     flex: 1;  /* factor de crecimiento 1, de los lados */
     border: 1px solid var(--gris);
+    display: block;
+    width: 100%;
   }
   
   .campo__field--textarea{
