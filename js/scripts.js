@@ -29,7 +29,7 @@ formulario.addEventListener("submit", function (evento) {
 
     // Validar campos vacíos
     const { nombre, email, texto } = datos;
-    if (nombre === '' || email === '' || texto === '') {
+    if (nombre === ' ' || email === ' ' || texto === ' ') {
         mostrarAlerta("Todos los campos son obligatorios", true);
         return;
     }
