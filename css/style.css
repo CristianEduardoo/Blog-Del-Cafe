@@ -100,6 +100,10 @@ img {
     padding-top: 4rem;
 }
 
+.barra-extra{
+    padding-top: 2rem;
+}
+
 @media (min-width:768px) {
     .header__texto {
         margin-top: 15rem;
@@ -222,7 +226,7 @@ img {
 /* -------------------------------------  FOOTER --------------------------------------- */
 .footer {
     background-color: var(--negro);
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
 
 }
 
@@ -298,7 +302,7 @@ img {
 
 .campo__label {
     flex: 0 0 6rem; /* 1 valor, no tiene factor de crecimiento 2 valor, tampoco mas pequeño 3valor, with*/
-    text-align: center;
+    text-align: left;
 }
 
 .campo__field {
@@ -310,4 +314,10 @@ img {
 
 .campo__field--textarea {
     height: 20rem;
+}
+
+.error-message{
+    color: red;
+    font-size: 12px;
+    margin-top: -22px;
 }

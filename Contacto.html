@@ -13,9 +13,14 @@
     <title>BlogDelCafé</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  ∫rel="stylesheet">
-    <link rel="preload" href="css/style.css" as="style"><!-- Para que el sitio web sea mas rapido rel=preload-->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!--=============== Bibliotecas ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Template Main CSS File -->
+    <link rel="preload" href="css/style.css" as="style"> <!-- Para que el sitio web sea mas rapido rel=preload-->
+    <link rel="stylesheet" href="css/style.css?=v1">
 </head>
 
 <body>
@@ -44,20 +49,29 @@
         <h3 class="centrar-texto">Contacto</h3>
         <div class="contacto-bg"></div>
 
-        <form action="mailto:cj.94@hotmail.com" method="post" autocomplete="on" class="formulario">
-            <div class="campo">
-                <label class="campo__label" for="nombre">Nombre</label>
-                <input class="campo__field" id="nombre" type="text" placeholder="Tu nombre"/>
+        <form action="" autocomplete="on" class="formulario" method="POST">
+            <div class="group">
+                <div class="campo">
+                    <label class="campo__label" for="name">Nombre</label>
+                    <input class="campo__field" id="name" name="name" type="text" placeholder="Tu nombre"/>
+                </div>
+                <!-- aqui el bloque de error de nombre -->
             </div>
 
-            <div class="campo">
-                <label class="campo__label" for="email">E-mail</label>
-                <input class="campo__field" id="email" type="email" placeholder="Tu E-mail"/>
+            <div class="group">
+                <div class="campo">
+                    <label class="campo__label" for="email">Email</label>
+                    <input class="campo__field" id="email" name="email" type="email" placeholder="Tu email"/>
+                </div>
+                <!-- aqui el bloque de error de email -->
             </div>
 
-            <div class="campo">
-                <label class="campo__label" for="texto">Mensaje</label>
-                <textarea class="campo__field campo__field--textarea" id="texto"  placeholder="Mensaje" ></textarea> <!-- Textarea con su modicador -- -->
+            <div class="group">
+                <div class="campo">
+                    <label class="campo__label" for="message">Mensaje</label>
+                    <textarea class="campo__field campo__field--textarea" id="message" name="message" placeholder="Mensaje" ></textarea> <!-- Textarea con su modicador -- -->
+                </div>
+                <!-- aqui el bloque de error de message -->
             </div>
 
             <div class="campo">
@@ -68,7 +82,7 @@
 
     <footer class="footer">
         <div class="contenedor">
-            <div class="barra">
+            <div class="barra barra-extra">
                 <a href="index.html" class="logo">
                     <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DelCafé</span></h1> 
                 </a>
@@ -83,7 +97,7 @@
     </footer>
 
     <script src="js/Modernizr.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>
